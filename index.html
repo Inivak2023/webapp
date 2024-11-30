@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Iframe Video</title>
+  <script src="video.js"></script>
+</head>
+<body>
+  <h1>Video Player</h1>
+  <iframe id="videoFrame" width="640" height="360" allow="autoplay"></iframe>
+  
+  <script>
+    // video.js මගින් iframe src update කිරීම
+    const videoLink = getVideoSrc();
+    document.getElementById("videoFrame").src = videoLink;
+  </script>
+
+<iframe id="videoFrame2" width="640" height="360" allow="autoplay"></iframe>
+  
+<script>
+  // video.js මගින් iframe src update කිරීම
+  const videoLink1 = getVideoSrc1();
+  document.getElementById("videoFrame2").src = videoLink1;
+</script>
+
+
+
+</body>
+</html>
